@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteBuilder.Api", "RouteBuilder.Api\RouteBuilder.Api.csproj", "{D62C966A-E95E-43A3-9C68-41D4D60D89B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteBuilder.Core", "RouteBuilder.Core\RouteBuilder.Core.csproj", "{84FE5CD0-246C-4A16-A909-B08D19A9D930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteBuilder.Tests", "RouteBuilder.Tests\RouteBuilder.Tests.csproj", "{DCA7760B-3E2E-4B90-AD97-FCADFB4EC1B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D62C966A-E95E-43A3-9C68-41D4D60D89B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62C966A-E95E-43A3-9C68-41D4D60D89B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62C966A-E95E-43A3-9C68-41D4D60D89B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62C966A-E95E-43A3-9C68-41D4D60D89B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FE5CD0-246C-4A16-A909-B08D19A9D930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FE5CD0-246C-4A16-A909-B08D19A9D930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FE5CD0-246C-4A16-A909-B08D19A9D930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FE5CD0-246C-4A16-A909-B08D19A9D930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCA7760B-3E2E-4B90-AD97-FCADFB4EC1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCA7760B-3E2E-4B90-AD97-FCADFB4EC1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCA7760B-3E2E-4B90-AD97-FCADFB4EC1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCA7760B-3E2E-4B90-AD97-FCADFB4EC1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
