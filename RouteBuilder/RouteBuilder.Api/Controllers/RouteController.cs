@@ -1,4 +1,7 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
 using RouteBuilder.Api.Models;
 using RouteBuilder.Core.Interfaces;
 
@@ -15,11 +18,19 @@ namespace RouteBuilder.Api.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult GetRoute(GetRoute request)
+        public HttpResponseMessage GetRoute(Route request)
         {
-            var routes = _routeService.FoundRoutes(request.StartPoint, request.FinishPioint);
-
-            return Ok();
+            try
+            {
+                var routes = _routeService.FoundRoutes(request.StartPoint, request.FinishPioint);
+                var response = Request.CreateResponse(HttpStatusCode.OK, routes);
+                return response;
+            }
+            catch (Exception e)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e);
+            }
+            
         }
 
     }

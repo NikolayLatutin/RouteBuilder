@@ -24,11 +24,11 @@ namespace RouteBuilder.Tests
         }
 
         [Test]
-        public void FoundRoutes_Test()
+        public void FoundRoutes_from_PKR_to_BKK()
         {
             //arrange
-            Init();
-            _routeService = new RouteService(_moqSwaggerWrapper.Object, _moqAirlineService.Object);
+            //Init();
+            //_routeService = new RouteService(_moqSwaggerWrapper.Object, _moqAirlineService.Object);
 
             //act
             var result = _routeService.FoundRoutes("PKR", "BKK");

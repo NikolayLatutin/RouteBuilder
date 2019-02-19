@@ -28,7 +28,7 @@ namespace RouteBuilder.Core.Implementations
             var url = $"{_host}{_airlineEndpoint}/{alias}";
             var request = _httpClientWrapper.MakeGetRequest(url, new Dictionary<string, string>());
 
-            var result = JsonConvert.DeserializeObject<IList<Airline>>(request)
+            var result = JsonConvert.DeserializeObject<IList<Airline>>(request.Result)
                 .FirstOrDefault();
             return result;
         }
@@ -38,7 +38,7 @@ namespace RouteBuilder.Core.Implementations
             var url = $"{_host}{_routeEndpoint}?airport={airport}";
             var request = _httpClientWrapper.MakeGetRequest(url, new Dictionary<string, string>());
 
-            var result = JsonConvert.DeserializeObject<IList<Route>>(request);
+            var result = JsonConvert.DeserializeObject<IList<Route>>(request.Result);
             return result;
         }
 
@@ -47,7 +47,7 @@ namespace RouteBuilder.Core.Implementations
             var url = $"{_host}{_routeEndpoint}?airport={airport}";
             var request = _httpClientWrapper.MakeGetRequest(url, new Dictionary<string, string>());
 
-            var result = JsonConvert.DeserializeObject<IList<Route>>(request)
+            var result = JsonConvert.DeserializeObject<IList<Route>>(request.Result)
                 .FirstOrDefault();
             return result;
         }
@@ -57,7 +57,7 @@ namespace RouteBuilder.Core.Implementations
             var url = $"{_host}{_airportEndpoint}?pattern={pattern}";
             var request = _httpClientWrapper.MakeGetRequest(url, new Dictionary<string, string>());
 
-            var result = JsonConvert.DeserializeObject<IList<Airport>>(request)
+            var result = JsonConvert.DeserializeObject<IList<Airport>>(request.Result)
                 .FirstOrDefault();
             return result;
         }
